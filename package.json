@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/jeandudey/jeandudey.github.io#readme",
   "dependencies": {
-    "normalize.css": "^4.2.0"
+    "normalize.css": "^4.2.0",
+    "picturefill": "^3.0.2"
   }
 }
