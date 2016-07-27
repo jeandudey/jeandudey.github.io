@@ -1,0 +1,18 @@
+{
+  "name": "jeandudey.github.io",
+  "version": "1.0.0",
+  "description": "My awesome website!",
+  "scripts": {
+    "test": "chromium index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeandudey/jeandudey.github.io.git"
+  },
+  "author": "Jean Pierre Dudey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeandudey/jeandudey.github.io/issues"
+  },
+  "homepage": "https://github.com/jeandudey/jeandudey.github.io#readme"
+}
