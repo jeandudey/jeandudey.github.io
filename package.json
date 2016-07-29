@@ -19,5 +19,10 @@
     "fontfaceobserver": "^2.0.1",
     "normalize.css": "^4.2.0",
     "picturefill": "^3.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-csso": "^2.0.0",
+    "gulp-svgmin": "^1.2.2"
   }
 }
