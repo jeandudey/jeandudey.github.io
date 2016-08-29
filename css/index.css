@@ -1,0 +1,143 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.grid-section {
+  clear: both;
+  padding: 0px;
+  margin: 0px; }
+
+.grid-col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%; }
+
+.grid-col:first-child {
+  margin-left: 0; }
+
+.grid-group:before,
+.grid-group:after {
+  content: "";
+  display: table; }
+
+.grid-group:after {
+  clear: both; }
+
+.grid-group {
+  zoom: 1;
+  /* For IE 6/7 */ }
+
+.span_3_of_3 {
+  width: 100%; }
+
+.span_2_of_3 {
+  width: 66.1%; }
+
+.span_1_of_3 {
+  width: 32.2%; }
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .grid-col {
+    margin: 1% 0 1% 0%; }
+
+  .span_3_of_3, .span_2_of_3, .span_1_of_3 {
+    width: 100%; } }
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  background-color: #3B3C40; }
+
+#wrapper {
+  width: 100%;
+  overflow: hidden; }
+
+#sidebar {
+  float: left;
+  height: 100%;
+  width: 40%;
+  background-color: #FEFEFE;
+  text-align: center;
+  border-right: 5px solid #aaa; }
+  #sidebar #name {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26pt;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 20px; }
+  #sidebar #bio {
+    text-align: left;
+    padding: 20px; }
+    #sidebar #bio strong {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700; }
+  #sidebar #links {
+    list-style-type: none;
+    width: 100%;
+    display: table;
+    margin-top: 150px; }
+    #sidebar #links li {
+      display: table-row;
+      line-height: 20px; }
+      #sidebar #links li label {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        display: table-cell;
+        width: 50%;
+        text-align: left; }
+      #sidebar #links li a {
+        display: table-cell;
+        width: 50%;
+        text-align: right; }
+
+#content {
+  background-color: #3B3C40;
+  margin: 0 0 0 40%; }
+  #content #experiences {
+    padding-left: 20px; }
+    #content #experiences article {
+      color: #fff; }
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16pt;
+  color: #00994d;
+  padding: 20px; }
+
+/*# sourceMappingURL=index.css.map */
