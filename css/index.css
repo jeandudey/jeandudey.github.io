@@ -34,8 +34,9 @@
 }
 
 #right {
+    display: flex;
     color: white;
-    align-items: center;
+    justify-content: center;
     align-self: flex-start;
     width: 50%;
 }
@@ -80,30 +81,4 @@
 
 #portfolio {
     display: none;
-}
-
-#about {
-    display: none;
-    font-family: Georgia, serif; 
-    background-color: #7A818F; 
-}
-
-#name {
-    text-transform: uppercase;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 1px solid red;
-}
-
-#name h1 {
-    font-size: 60px;
-}
-
-#name h2 {
-    font-size: 40px;
-}
-
-#name.fonts-loaded {
-    font-family: 'Cormorant SC', serif;
-    font-weight: 700;
 }
