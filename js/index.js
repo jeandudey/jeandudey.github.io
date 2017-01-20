@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', function(e){
     var firasans = new FontFaceObserver('Fira Sans Extra Condensed');
     firasans.load().then(function () {
         let container = document.getElementById('container');
+        let aboutMe = document.getElementById('about-me');
         container.className += ' fonts-loaded';
+        aboutMe.className += ' fonts-loaded';
     });
 
     var cormorant = new FontFaceObserver('Cormorant SC');
@@ -79,7 +81,7 @@ function cmdAbout(con) {
 
     let about = document.getElementById('about');
     about.style.display = 'block';
-    window.location.hash = '#about';
+    smoothScroll('about');
 }
 
 function cmdSkills(con) {

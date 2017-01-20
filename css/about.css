@@ -39,6 +39,21 @@
     float: right;
 }
 
+.about-me {
+    padding-top: 80px;
+    text-align: justify;
+    color: white;
+    width: 25%;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-family: Lucida, sans-serif;
+    font-size: 18px;
+}
+
+.about-me.fonts-loaded {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
 .about {
     background-color: #4c525c;
     /* IE9, iOS 3.2+ */
