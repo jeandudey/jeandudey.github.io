@@ -72,7 +72,7 @@ function cmdPortfolio(con) {
 
     let portfolio = document.getElementById('portfolio');
     portfolio.style.display = 'block';
-    window.location.hash = '#portfolio';
+    smoothScroll('portfolio');
 }
 
 function cmdAbout(con) {
