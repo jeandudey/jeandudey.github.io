@@ -2,6 +2,7 @@
 layout: post
 title: "Sane creation of USB bootable drives"
 tags: [linux, usb, manual]
+published: true
 ---
 
 Rather small cookbook recipe for creating Linux bootable drives using your hands
