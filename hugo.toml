@@ -23,3 +23,6 @@ unsafe = true
 [markup.highlight]
 style = "solarized-light"
 noClasses = false
+
+[caches.images]
+dir = ':cacheDir/images'
