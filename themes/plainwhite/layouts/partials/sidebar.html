@@ -1,0 +1,23 @@
+<section class="about">
+	<img src="{{ "portfolio.png" | relURL }}" alt="{{ .Site.Params.name }}">
+	<h2>{{ .Site.Params.name }}</h2>
+	<p class="tagline">{{ .Site.Params.tagline }}</p>
+	<ul class="social">
+		{{- with .Site.Params.social.github }}
+		<a href="https://github.com/{{ . }}">
+			<li><i class="icon-github-circled"></i></li>
+		</a>
+		{{- end }}
+		{{- with .Site.Params.social.twitter }}
+		<a href="https://twitter.com/{{ . }}">
+			<li><i class="icon-twitter-squared"></i></li>
+		</a>
+		{{- end }}
+		{{- with .Site.Params.social.linkedin }}
+		<a href="https://linkedin.com/in/{{ . }}">
+			<li><i class="icon-linkedin-squared"></i></li>
+		</a>
+		{{- end }}
+	</ul>
+	<p>&copy; {{ now.Year }}</p>
+</section>

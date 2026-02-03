@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Rust and Vala State of the Art"
-tags: [rust, vala, ffi, gui, elementary]
-published: true
+date: 2020-12-19
+draft: false
+tags: ["rust", "vala", "ffi", "gui", "elementary"]
 ---
 
 I have been using [Elementary OS] for a while, and - in my opinion -
@@ -11,7 +11,7 @@ of [Vala] and [GTK+] for the user applications. And with some curiosity
 I checked if Vala and Rust could talk to each other.
 
 <p align="center">
-  <img src="/assets/img/elementary-look.png" alt="Elementary OS Screenshot"/>
+  <img src="/img/elementary-look.png" alt="Elementary OS Screenshot"/>
   <br/>
   <i>Screenshot of my Elementary setup, default background</i>
 </p>
@@ -173,7 +173,7 @@ With this beautiful result, that does nothing for now, but with some love
 aranite and other libraries could work with Rust in a future:
 
 <p align="center">
-  <img src="/assets/img/radio-rs.png" alt="Elementary OS Screenshot"/>
+  <img src="/img/radio-rs.png" alt="Elementary OS Screenshot"/>
 </p>
 
 # Where's the code?

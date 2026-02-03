@@ -1,0 +1,11 @@
+name = "Plainwhite"
+license = "MIT"
+licenselink = "https://github.com/jeandudey/jeandudey.github.io/blob/master/LICENSE"
+description = "A two-column minimal theme for Hugo"
+
+[author]
+name = "Jean Pierre De Jesus DIAZ"
+homepage = "https://jeandudey.tech"
+
+[params]
+minVersion = "0.100.0"

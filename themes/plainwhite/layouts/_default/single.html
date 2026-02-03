@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="post-container">
+  <a class="post-link" href="{{ .RelPermalink }}">
+    <h2 class="post-title">{{ .Title }}</h2>
+  </a>
+  <div class="post-meta">
+    <ul class="post-categories">
+      {{- range .Params.tags }}
+      <li>{{ . }}</li>
+      {{- end }}
+    </ul>
+    <div class="post-date"><i class="icon-calendar"></i>{{ .Date.Format (default "Jan 2, 2006" .Site.Params.dateFormat) }}</div>
+  </div>
+  <div class="post">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}

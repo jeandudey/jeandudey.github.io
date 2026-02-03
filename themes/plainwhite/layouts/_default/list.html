@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{- if .Title }}
+<h1 class="page-heading">{{ .Title }}</h1>
+{{- end }}
+
+{{ .Content }}
+
+{{- $pages := where .Site.RegularPages "Section" "posts" }}
+{{- if gt (len $pages) 0 }}
+<ul class="posts">
+  <li>
+    <h1 id="posts-label">posts</h1>
+  </li>
+
+  {{- range $pages }}
+  <li>
+    <a class="post-link" href="{{ .RelPermalink }}">
+      <h2 class="post-title">{{ .Title }}</h2>
+    </a>
+    <div class="post-meta">
+      <ul class="post-categories">
+        {{- range .Params.tags }}
+        <li>{{ . }}</li>
+        {{- end }}
+      </ul>
+      <div class="post-date"><i class="icon-calendar"></i>{{ .Date.Format (default "Jan 2, 2006" .Site.Params.dateFormat) }}</div>
+    </div>
+    <div class="post">
+      {{- if .Site.Params.showExcerpts }}
+      {{ .Summary }}
+      {{- end }}
+    </div>
+  </li>
+  {{- end }}
+</ul>
+{{- end }}
+{{ end }}

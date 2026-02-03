@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Sane creation of USB bootable drives"
-tags: [linux, usb, manual]
-published: true
+date: 2020-04-19
+draft: false
+tags: ["linux", "usb", "manual"]
 ---
 
 Rather small cookbook recipe for creating Linux bootable drives using your hands
@@ -23,7 +23,7 @@ Also, this is for the MBR partition scheme, GPT is too advanced for my 2011
 computer.
 
 <p align="center">
-  <img src="/assets/img/usb.jpeg" alt="USB drive" width="500px" height="400px"/>
+  <img src="/img/usb.jpeg" alt="USB drive" width="500px" height="400px"/>
   <br/>
   <i>Photo of my small USB with some Rust</i>
   <br/>

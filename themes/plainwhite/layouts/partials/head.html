@@ -1,0 +1,14 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+{{- $scss := resources.Get "scss/main.scss" }}
+{{- $style := $scss | resources.ToCSS (dict "outputStyle" "compressed") }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+{{- with .Site.Params.description }}
+<meta name="description" content="{{ . }}">
+{{- end }}
+{{- with .Site.Params.author }}
+<meta name="author" content="{{ . }}">
+{{- end }}
+<link rel="canonical" href="{{ .Permalink }}">

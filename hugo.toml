@@ -1,0 +1,25 @@
+baseURL = "https://jeandudey.tech/"
+languageCode = "en-us"
+title = "Jean Pierre De Jesus DIAZ"
+theme = "plainwhite"
+
+[params]
+name = "Jean Pierre De Jesus DIAZ"
+tagline = "Software Engineer"
+description = "Blog about programming, software development, and technology."
+author = "Jean Pierre De Jesus DIAZ"
+email = "me@jeandudey.tech"
+dateFormat = "Jan 2, 2006"
+showExcerpts = true
+
+[params.social]
+github = "jeandudey"
+twitter = "jeandudey"
+linkedin = "jeandudey"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "solarized-light"
+noClasses = false
