@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="posts">
+  <h1 id="posts-label">{{ .Title }}</h1>
+
+  {{ .Content }}
+
+  <div class="projects-grid">
+    {{- range .Params.projects }}
+    <div class="project-card">
+      <a class="post-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+        <h2 class="project-title">{{ .name }}</h2>
+      </a>
+      <p class="project-description">{{ .description }}</p>
+      <div class="project-meta">
+        <ul class="post-categories">
+          {{- range .tags }}
+          <li>{{ . }}</li>
+          {{- end }}
+        </ul>
+        <a class="project-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer">
+          <i class="icon-github-circled"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+    {{- end }}
+  </div>
+</div>
+{{ end }}
